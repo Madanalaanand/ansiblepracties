@@ -1,0 +1,8 @@
+--- 
+- name: install ngnix
+  hosts: server
+  become: yes
+  tasks: 
+    - name: install ngnix
+      update_cache: yes
+      state: present
