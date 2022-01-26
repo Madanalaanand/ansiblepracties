@@ -13,7 +13,7 @@
         name: nginx
         state: reloaded
     - name: Change file ownership, group and permissions
-      ansible.builtin.file:
+      ansible.builtin.copy:
         path: index.html
         dest: /etc/nginx/sites-available/index.html
         mode: '0644'
