@@ -12,3 +12,7 @@
       ansible.builtin.service:
         name: nginx
         state: reloaded
+    - name: Change file ownership, group and permissions
+      ansible.builtin.file:
+        path: D:\ansiblepracties\practies\index.html
+        mode: '0644'
