@@ -14,7 +14,7 @@
         state: reloaded
     - name: Change file ownership, group and permissions
       ansible.builtin.copy:
-        path: index.html
+        src: index.html
         dest: /etc/nginx/sites-available/index.html
         mode: '0644'
         state: absent
