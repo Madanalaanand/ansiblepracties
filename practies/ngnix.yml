@@ -18,3 +18,8 @@
         dest: /etc/nginx/sites-available/index.html
         mode: '0644'
         state: absent
+    - name: create symlink
+      file:
+        src: index.html
+        dest: /etc/nginx/sites-available/index.html
+        state: link
