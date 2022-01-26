@@ -1,0 +1,8 @@
+---
+- name: anand_babu
+  hosts: server
+  become: true
+  tasks:
+    - name: madanala_babu
+      debug:
+        msg: i love you devops
