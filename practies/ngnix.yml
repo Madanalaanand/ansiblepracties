@@ -10,5 +10,5 @@
         state: present
     - name: Reload service httpd, in all cases
       ansible.builtin.service:
-        name: httpd
+        name: nginx
         state: reloaded
