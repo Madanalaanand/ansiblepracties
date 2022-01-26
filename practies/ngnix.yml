@@ -12,8 +12,7 @@
       ansible.builtin.service:
         name: nginx
         state: reloaded
-    - name: create symlink
-      file:
-        src: index.html
-        dest: /etc/nginx/sites-available/index.html
-        state: link
+    - name: template 
+      ansible.builtin.template:
+        src: index.html.j2
+        dest: /var/www/nginx/html/index.html
