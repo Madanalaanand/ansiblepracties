@@ -1,10 +1,10 @@
 --- 
-- name: install ngnix
+- name: install nginx
   hosts: server
   become: yes
   tasks: 
-    - name: install ngnix
+    - name: install nginx
       apt:
-        name: ngnix
+        name: nginx
         update_cache: yes
         state: present
